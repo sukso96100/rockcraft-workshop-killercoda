@@ -1,22 +1,25 @@
 {
-    "title": "Your first Rock",
-    "description": "Build your first simple rock",
-    "details": {
-      "intro": {
-        "text": "intro.md",
-        "foreground": "setup.sh"
-      },
-      "steps": [
-        {
-          "title": "Let's update our package manager repository",
-          "text": "step1.md"
-        }
-      ],
-      "finish": {
-        "text": "finish.md"
-      }
+  "title": "Your first Rock",
+  "description": "Build your first simple rock",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "setup.sh"
     },
-    "backend": {
-      "imageid": "ubuntu"
+    "steps": [
+      {
+        "title": "Let's update our package manager repository",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
     }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "interface": {
+    "layout": "ide"
   }
+}
