@@ -1,8 +1,8 @@
 
 <br>
 
-### Welcome !
+### Welcome!
 
-In this scenario we'll learn how to update the `apt` repository.
+In this scenario, Let's write a simple `rockcraft.yaml` then build a rock from it.
 
-**HAVE FUN**
+Seceral tools you'll be using in this scenario are being installed. Click `START` once installations are done.
