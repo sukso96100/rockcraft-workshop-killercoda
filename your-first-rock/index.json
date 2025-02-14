@@ -18,8 +18,9 @@
         "verify": "2-new-dotnet-app/verify.sh"
       },
       {
-        "title": "Let's update our package manager repository",
-        "text": "step1.md"
+        "title": "3. rockcraft.yaml",
+        "text": "3-rockcraft-yaml/index.md",
+        "verify": "3-rockcraft-yaml/verify.sh"
       }
     ],
     "finish": {
