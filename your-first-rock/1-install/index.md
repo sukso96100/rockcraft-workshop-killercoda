@@ -14,7 +14,7 @@ These tools are already being installed in background. Please wait a few minutes
 
 If you want to install tools manually, you may follow instructions below.
 
-- 1. Install Rockcraft, Chisel, LXD using Snap
+- Install Rockcraft, Chisel, LXD using Snap
 
 ```bash
 sudo snap install lxd
@@ -22,13 +22,13 @@ sudo snap install --classic rockcraft
 sudo snap install --classic chisel
 ```
 
-- 2. Initialize LXD
+- Initialize LXD
 
 ```bash
 sudo lxd init --auto
 ```
 
-- 3. Enable IPv4 forwarding to prevent networking issues when using LXD and Docker at the same time [(Learn more on LXD Docs)](https://documentation.ubuntu.com/lxd/en/latest/howto/network_bridge_firewalld/#prevent-connectivity-issues-with-lxd-and-docker)
+- Enable IPv4 forwarding to prevent networking issues when using LXD and Docker at the same time [(Learn more on LXD Docs)](https://documentation.ubuntu.com/lxd/en/latest/howto/network_bridge_firewalld/#prevent-connectivity-issues-with-lxd-and-docker)
 
 ```bash
 sudo echo "net.ipv4.conf.all.forwarding=1" > /etc/sysctl.d/99-forwarding.conf
@@ -36,6 +36,6 @@ sudo systemctl restart systemd-sysctl
 sudo systemctl restart docker
 ```
 
-- 4. For installing .NET, refer to the link below.
+- For installing .NET, refer to the link below.
   - https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install
   - Check Ubuntu release of this environemnt using `lsb_release -a` before following installation guidance.
