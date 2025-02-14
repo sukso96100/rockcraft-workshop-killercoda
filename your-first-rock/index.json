@@ -4,10 +4,13 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "background": "setup.sh",
-      "verify": "verify.sh"
+      "background": "setup.sh"
     },
     "steps": [
+      {
+        "text": "1-install/index.md",
+        "verify": "verify.sh"
+      },
       {
         "title": "Let's update our package manager repository",
         "text": "step1.md"
