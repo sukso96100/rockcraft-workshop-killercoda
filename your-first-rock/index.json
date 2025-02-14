@@ -4,13 +4,19 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "background": "setup.sh"
+      "foreground": "setup-foreground.sh",
+      "background": "setup-background.sh"
     },
     "steps": [
       {
         "title": "1. Installing tools",
         "text": "1-install/index.md",
         "verify": "1-install/verify.sh"
+      },
+      {
+        "title": "2. Create a .NET app",
+        "text": "2-new-dotnet-app/index.md",
+        "verify": "2-new-dotnet-app/verify.sh"
       },
       {
         "title": "Let's update our package manager repository",
