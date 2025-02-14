@@ -8,6 +8,7 @@
     },
     "steps": [
       {
+        "title": "1. Installing tools",
         "text": "1-install/index.md",
         "verify": "1-install/verify.sh"
       },
