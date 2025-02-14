@@ -10,9 +10,9 @@ cd dotnet-webapi
 
 Then, Let's also try to run it.
 ```bash
-dotnet run --urls http://localhost:5000
+dotnet run --urls http://0.0.0.0:5000
 ```
 
 While your .NET app is running, click links below to see what does the app do.
-- [http://localhost:5000/weatherforecast]({{TRAFFIC_HOST1_5000}}/weatherforecast)
-- [http://localhost:5000/swagger]({{TRAFFIC_HOST1_5000}}/swagger)
+- [http://0.0.0.0:5000/weatherforecast]({{TRAFFIC_HOST1_5000}}/weatherforecast)
+- [http://0.0.0.0:5000/swagger]({{TRAFFIC_HOST1_5000}}/swagger)
