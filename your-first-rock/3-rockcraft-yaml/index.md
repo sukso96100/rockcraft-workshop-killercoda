@@ -7,7 +7,7 @@ Run following command to create a `rockcraft.yaml` file.
 rockcraft init
 ```
 
-Now, let's open it. It should looks like this.
+Once `rockcraft.yaml` is created, let's have a look. It should looks like this.
 
 ```yaml
 name: dotnet-webapi
