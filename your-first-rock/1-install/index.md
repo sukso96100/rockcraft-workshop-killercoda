@@ -36,6 +36,8 @@ sudo systemctl restart systemd-sysctl
 sudo systemctl restart docker
 ```
 
-- For installing .NET, refer to the link below.
-  - https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install
-  - Check Ubuntu release of this environemnt using `lsb_release -a` before following installation guidance.
+- Install .NET SDK and ASP.NET Runtime [(More details on Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2404)
+
+```bash
+sudo apt install -y -q dotnet-sdk-8.0 aspnetcore-runtime-8.0
+```

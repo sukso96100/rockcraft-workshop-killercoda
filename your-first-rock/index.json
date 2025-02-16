@@ -21,6 +21,11 @@
         "title": "3. rockcraft.yaml",
         "text": "3-rockcraft-yaml/index.md",
         "verify": "3-rockcraft-yaml/verify.sh"
+      },
+      {
+        "title": "4. Working with parts",
+        "text": "4-parts/index.md",
+        "verify": "4-parts/verify.sh"
       }
     ],
     "finish": {
@@ -28,6 +33,6 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu-rapid"
   }
 }
