@@ -20,3 +20,15 @@ parts:
     dotnet-webapi: # Was "my-part"
         plugin: nil
 ```        
+
+Let's add source related properties that will be used to pull source for building our rock. While we can configure it to pull from remote git repository or other sources, we'll configure it to use local directory as source.
+
+To do that, add `source-type` as `local` and `source` as `.`(current directory). Just like this.
+
+```yaml
+parts:
+    dotnet-webapi: # Was "my-part"
+        plugin: nil
+        source-type: local
+        source: .
+```
