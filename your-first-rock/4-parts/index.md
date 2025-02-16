@@ -66,3 +66,28 @@ parts:
             dotnet build 
             dotnet publish -c Release -o ${CRAFT_PART_INSTALL}/
 ```
+
+Let's also add properties for stage step. This time, we're just adding `stage-packages` only. 
+
+`stage-packages` is used to define which packages will be included in the container image that will be used on runtime. Add `aspnetcore-runtime-8.0` under this property.
+
+```yaml
+parts:
+    dotnet-webapi: # Was "my-part"
+        plugin: nil
+        source-type: local
+        source: .
+        build-environment:
+            - PATH: "/usr/bin:${PATH}"
+        build-packages:
+            - dotnet-sdk-8.0
+        override-build: |
+            craftctl default
+            dotnet restore
+            dotnet build 
+            dotnet publish -c Release -o ${CRAFT_PART_INSTALL}/
+        stage-packages: # Here, like this
+            - aspnetcore-runtime-8.0
+```
+
+On next step, We will continue to define a few more properties such as services and runtime environments.
