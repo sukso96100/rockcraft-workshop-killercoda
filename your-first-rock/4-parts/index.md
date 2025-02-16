@@ -35,11 +35,11 @@ parts:
 
 Next, let's add `build` step relevant properties.
 
-- `build-environment`: Environment variables that will be defined in the build environment.
+- [`build-environment`](https://documentation.ubuntu.com/rockcraft/en/stable/common/craft-parts/reference/part_properties.html#build-environment): Environment variables that will be defined in the build environment.
   - Add `PATH: "/usr/bin:${PATH}"` under this property
-- `build-packages`: Packages from Ubuntu archive to install for use during build.
+- [`build-packages`](https://documentation.ubuntu.com/rockcraft/en/stable/common/craft-parts/reference/part_properties.html#build-packages): Packages from Ubuntu archive to install for use during build.
   - Add `dotnet-sdk-8.0`
-- `override-build`: Used for overrideing build commands. We'll be adding following commands
+- [`override-build`](https://documentation.ubuntu.com/rockcraft/en/stable/common/craft-parts/reference/part_properties.html#override-build): Used for overrideing build commands. We'll be adding following commands
 
 ```yaml
 override-build: |
