@@ -32,3 +32,37 @@ parts:
         source-type: local
         source: .
 ```
+
+Next, let's add `build` step relevant properties.
+
+- `build-environment`: Environment variables that will be defined in the build environment.
+  - Add `PATH: "/usr/bin:${PATH}"` under this property
+- `build-packages`: Packages from Ubuntu archive to install for use during build.
+  - Add `dotnet-sdk-8.0`
+- `override-build`: Used for overrideing build commands. We'll be adding following commands
+
+```yaml
+override-build: |
+    craftctl default
+    dotnet restore
+    dotnet build 
+    dotnet publish -c Release -o ${CRAFT_PART_INSTALL}/
+```
+
+After adding 3 properties above, `dotnet-webapi` part should looks like below.
+```yaml
+parts:
+    dotnet-webapi: # Was "my-part"
+        plugin: nil
+        source-type: local
+        source: .
+        build-environment:
+            - PATH: "/usr/bin:${PATH}"
+        build-packages:
+            - dotnet-sdk-8.0
+        override-build: |
+            craftctl default
+            dotnet restore
+            dotnet build 
+            dotnet publish -c Release -o ${CRAFT_PART_INSTALL}/
+```
