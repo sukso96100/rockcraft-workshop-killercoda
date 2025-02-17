@@ -47,3 +47,26 @@ Let's build a rock from this `rockcraft.yaml` file we wrote. Run `rockcraft pack
 ```bash
 rockcraft pack -v
 ```
+
+#### Loading into docker
+Once you got your rock built and got `*.rock` file, You can load it into docker using [skopeo](https://github.com/containers/skopeo).
+
+Rockcraft snap (which was installed on Step 1) alrady includes `skopeo` which can be accessed with `rockcraft.skopeo` command.    
+Use `skopeo copy` command to copy rock into docker. (Use the full command below)
+
+```bash
+sudo rockcraft.skopeo --insecure-policy copy oci-archive:dotnet-webapi_0.1_amd64.rock docker-daemon:dotnet-webapi:0.1
+```
+
+#### Run the rock!
+We can now run the rock just built then loaded into docker.
+
+Run your rock with the command below.
+```bash
+sudo docker run -p 8080:8080 dotnet-webapi:0.1
+```
+
+Then check if the rock (container) with .NET app runs properly by clicking links below.
+- [http://0.0.0.0:8080/weatherforecast]({{TRAFFIC_HOST1_8080}}/weatherforecast)
+- [http://0.0.0.0:8080/swagger]({{TRAFFIC_HOST1_8080}}/swagger)
+

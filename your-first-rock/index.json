@@ -32,7 +32,8 @@
       },
       {
         "title": "6. Let's build then run it!",
-        "text": "6-pack/index.md"
+        "text": "6-pack/index.md",
+        "verify": "6-pack/verify.sh"
       }
     ],
     "finish": {
