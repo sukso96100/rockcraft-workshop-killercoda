@@ -24,8 +24,15 @@
       },
       {
         "title": "4. Working with parts",
-        "text": "4-parts/index.md",
-        "verify": "4-parts/verify.sh"
+        "text": "4-parts/index.md"
+      },
+      {
+        "title": "5. Services and other properties",
+        "text": "5-services/index.md"
+      },
+      {
+        "title": "6. Let's build then run it!",
+        "text": "6-pack/index.md"
       }
     ],
     "finish": {

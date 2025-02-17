@@ -34,3 +34,24 @@ services:
         command: dotnet dotnet-webapi.dll
 ...
 ```
+
+#### Image environment variables
+
+Lastly, we are going to add an environment variable. To make sure our .NET app can listen incoming connections, We'll set `ASPNETCORE_URLS=http://0.0.0.0:8080`.
+
+To do that, add [`environment`](https://documentation.ubuntu.com/rockcraft/en/stable/reference/rockcraft.yaml.html#environment) on top level (just like `services`) then add the environment variable in key value form.
+
+```yaml
+...
+environment:
+    ASPNETCORE_URLS: http://0.0.0.0:8080
+
+services:
+    dotnet-webapi:
+        override: replace
+        startup: enabled
+        command: dotnet dotnet-webapi.dll
+...
+```
+
+We're now done with writing a `rockcraft.yaml` for our .NET app. On next step, let's build a rock then run it with docker.
