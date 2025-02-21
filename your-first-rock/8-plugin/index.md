@@ -27,7 +27,7 @@ parts:
 ...
 ``` 
 
-As scripts for building .NET app is already defined by the plugin, we don't need to define `override-build`. So, let's have that property removed.
+As scripts for building .NET app is now already defined by the plugin, we don't need to define `override-build`. So, let's have that property removed.
 
 After that, your `parts` should looks like this so far.
 
@@ -48,3 +48,5 @@ parts:
         # Note: No override-build!
 ...
 ``` 
+
+On next step, We'll update `stage-packages` to use chisel slices.
