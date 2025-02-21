@@ -44,6 +44,11 @@
         "title": "8. Plugin",
         "text": "8-plugin/index.md",
         "verify": "8-plugin/verify.sh"
+      },
+      {
+        "title": "9. Chisel",
+        "text": "9-chisel/index.md",
+        "verify": "9-chisel/verify.sh"
       }
     ],
     "finish": {
