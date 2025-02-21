@@ -50,6 +50,12 @@
         "text": "9-chisel/index.md",
         "verify": "9-chisel/verify.sh"
       }
+      ,
+      {
+        "title": "10. Running your second rock",
+        "text": "10-pack-v2/index.md",
+        "verify": "10-pack-v2/verify.sh"
+      }
     ],
     "finish": {
       "text": "finish.md"
