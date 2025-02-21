@@ -7,8 +7,15 @@ On next steps, Let's modify the `rockcraft.yaml` we wrote before to use:
 
 #### bare base
 
-First, Let's update `rockcraft.yaml` to use `bare base.
+First, Let's update `version` on `rockcraft.yaml` to `'0.2'`.
 
+```yaml
+...
+version: '0.2'
+...
+```
+
+Let's also update `base` to `bare`.
 On your `rockcraft.yaml`, Update `base` from
 
 ```yaml
