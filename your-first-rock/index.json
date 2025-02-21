@@ -39,6 +39,11 @@
         "title": "7. bare base",
         "text": "7-bare/index.md",
         "verify": "7-bare/verify.sh"
+      },
+      {
+        "title": "8. Plugin",
+        "text": "8-plugin/index.md",
+        "verify": "8-plugin/verify.sh"
       }
     ],
     "finish": {
