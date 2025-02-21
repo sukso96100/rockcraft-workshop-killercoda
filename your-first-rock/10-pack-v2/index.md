@@ -51,3 +51,13 @@ Then check if the rock (container) with .NET app runs properly by clicking links
 - [http://0.0.0.0:8080/swagger]({{TRAFFIC_HOST1_8080}}/swagger)
 
 #### Compare sizes of 2 rocks
+Now let's compare sizes of 2 rocks.
+```bash
+ls -l --block-size=MB *.rock
+```
+
+You can see `0.2` is smaller as it's built on bare base and includes chiseled package as dependency.
+```bash
+-rw-r--r-- 1 root root 103MB Feb 21 16:35 dotnet-webapi_0.1_amd64.rock
+-rw-r--r-- 1 root root  71MB Feb 21 16:38 dotnet-webapi_0.2_amd64.rock
+```
