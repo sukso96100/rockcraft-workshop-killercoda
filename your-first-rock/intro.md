@@ -12,4 +12,6 @@ You will be doing:
   - Build a .NET Rock
   - Load the rock built into Docker
   - Test running rock with Docker
+  - Modifying `rockcraft.yaml` to use `bare` base, .NET plugin and chiseled packages
+  - Build then run the rock again
   

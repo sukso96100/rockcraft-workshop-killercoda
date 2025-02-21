@@ -34,6 +34,11 @@
         "title": "6. Let's build then run it!",
         "text": "6-pack/index.md",
         "verify": "6-pack/verify.sh"
+      },
+      {
+        "title": "7. bare base",
+        "text": "7-bare/index.md",
+        "verify": "7-bare/verify.sh"
       }
     ],
     "finish": {
